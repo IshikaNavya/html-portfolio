@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+.body{
+    background-color: #AFD198;
+  }
+.h1{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 120px;
+  position: absolute;
+  top: -100px;
+  left: 550px;
+}
+
+
+.info{
+    position:absolute;
+    top:90px;
+}
+.container{
+    border:2px solid black;
+    width:400px;
+    padding-top:20px;
+    padding-left: 30px;
+}
+.btn{
+    background-color: #AFD198;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px #648350;
+    margin-left: 150px;
+}
+.bord{
+    position:absolute;
+    left:630px;
+    top:0px;
+    width:900px;
+    height:740px;
+}
+   </style>
+</head>
+<body class="body">
+    <img class="bord" src="./html files/Plants__Free_Borders_for_Scrapbooking_-removebg-preview.png">
+    <div class="div">
+     <h1 class="h1">Contact us</h1>
+     </div>
+     <div class="info"><ol><li><h3>Contact Information:</h3></li>
+       <ul type="disc">
+
+        <li><b>Address:</b>  Mohali, Punjab,India</li>
+        <li> <b>Phone:</b> +91 9870643657</li>
+        <li><b>Email:</b>bookworld@gmail.com</li>
+    </ul>
+    <br>
+
+        <li><b> Store Hours:</b></li>
+        <ul type="disc">
+        <li><b>Monday - Friday:</b> [9:00 am] - [9:00 pm]</li>
+        <li><b>Saturday/Sunday: </b>[10:00 am] - [9:00 pm]</li><br>
+        
+    </ul>
+        <li><b>Connect with us:</b></li>
+        <ul type="disc">
+                <li><b>Facebook:</b><a href="#facebook">Link here</a></li>
+                <li><b>Twitter:</b> <a href="#twitter">Link here</a></li>
+                <li><b>Instagram:</b> <a href="#insta">Link here</a></li>
+        </ul>
+        <li><h3><b>Feedback Form:</b></h3></li>
+
+            Have feedback or a specific inquiry? Please fill out the form below, and we'll get back to you as soon as possible.<br>
+            <br>
+            <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["name"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                }
+            </script>
+        
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                <div class="container">
+                    
+        
+                    <b>User Id:</b><input type="text" name="userId" required><br><br>
+                    <b>Name:</b><input type="text" name="name"><br><br>
+                    
+                    <b>Feedback:</b><br>
+                    <textarea rows="4" cols="45" name="about" required></textarea><br><br>
+            
+                    <button type="submit" class="btn"><b>Submit</b></button><br><br>
+                </div>
+            </form>
+        
+    <p><b>We appreciate your interest in Book World and look forward to assisting you!</b></p>
+            
+            
+    </ol>
+    </div>
+</body>
+</html>
